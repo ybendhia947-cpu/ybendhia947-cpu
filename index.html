@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Med Yassine Ben Dhia – Création de sites vitrines</title>
+  <meta name="description" content="Je crée le site vitrine de votre commerce ou de votre activité : rapide, clair, lisible sur téléphone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fond: #f5f7f6;
+      --encre: #15222b;
+      --bleu: #1d5fc4;      /* bleu des portes de Sidi Bou Saïd */
+      --bleu-fonce: #123f87;
+      --ocre: #e3a72f;
+      --gris: #5d6b74;
+      --ligne: #d6dde0;
+      --titre: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+      --texte: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--fond); color: var(--encre); font-family: var(--texte); line-height: 1.65; }
+    a { color: var(--bleu); }
+    :focus-visible { outline: 3px solid var(--ocre); outline-offset: 3px; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 1.25rem; }
+    section { padding: 4.5rem 0; }
+    h1, h2, h3 { font-family: var(--titre); line-height: 1.1; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 1.5rem; }
+
+    /* En-tête */
+    header { border-bottom: 1px solid var(--ligne); }
+    header .wrap { display: flex; flex-wrap: wrap; gap: .75rem 2rem; justify-content: space-between; align-items: center; padding-top: 1rem; padding-bottom: 1rem; }
+    .logo { font-family: var(--titre); font-weight: 800; text-decoration: none; color: var(--encre); }
+    nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+    nav a { color: var(--encre); text-decoration: none; }
+    nav a:hover { color: var(--bleu); }
+
+    /* Hero : le nom est l'élément marquant */
+    .hero { padding: 5rem 0 4rem; }
+    .hero h1 { font-weight: 800; font-size: clamp(2.8rem, 10vw, 6.5rem); letter-spacing: -.03em; color: var(--bleu-fonce); }
+    .hero p { max-width: 36rem; margin: 1.5rem 0 2rem; font-size: 1.2rem; color: var(--gris); }
+    .btn { display: inline-block; background: var(--bleu); color: #fff; padding: .85rem 1.6rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+    .btn:hover { background: var(--bleu-fonce); }
+    .btn.alt { background: transparent; color: var(--encre); border: 2px solid var(--encre); margin-left: .5rem; }
+    .btn.alt:hover { background: var(--encre); color: #fff; }
+
+    /* Services */
+    .offre { display: grid; gap: 2rem; grid-template-columns: 1fr; border-top: 3px solid var(--ocre); padding-top: 1.5rem; }
+    .offre ul { padding-left: 1.2rem; }
+    .offre li { margin-bottom: .5rem; }
+    .prix { font-family: var(--titre); font-size: 2rem; font-weight: 800; }
+    @media (min-width: 760px) { .offre { grid-template-columns: 1.4fr 1fr; } }
+
+    /* Projets */
+    .projets { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .projet { background: #fff; border: 1px solid var(--ligne); border-radius: 4px; overflow: hidden; }
+    .projet img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: var(--ligne); display: block; }
+    .projet div { padding: 1rem 1.2rem 1.3rem; }
+    .projet p { color: var(--gris); font-size: .95rem; margin: .3rem 0 .6rem; }
+
+    /* À propos */
+    .apropos { background: var(--encre); color: #eef2f3; }
+    .apropos p { max-width: 40rem; }
+    .apropos .tags { margin-top: 1.5rem; color: var(--ocre); }
+
+    /* Contact */
+    .contact p { max-width: 36rem; margin-bottom: 1.5rem; }
+    footer { border-top: 1px solid var(--ligne); padding: 1.5rem 0; color: var(--gris); font-size: .9rem; }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#accueil">Med Yassine Ben Dhia</a>
+      <nav aria-label="Navigation principale">
+        <a href="#services">Service</a>
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="wrap">
+        <h1>Med Yassine Ben Dhia</h1>
+        <p>Je crée le site vitrine de votre activité : clair, rapide et lisible sur téléphone, pour que vos clients vous trouvent et vous contactent.</p>
+        <a class="btn" href="#contact">Demander un devis</a>
+        <a class="btn alt" href="#projets">Voir mes projets</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2>Un site vitrine, clé en main</h2>
+        <div class="offre">
+          <ul>
+            <li>Design adapté à votre activité et à votre image</li>
+            <li>Affichage parfait sur téléphone, tablette et ordinateur</li>
+            <li>Vos horaires, adresse, photos et services en une page</li>
+            <li>Bouton WhatsApp et formulaire de contact</li>
+            <li>Mise en ligne avec votre nom de domaine</li>
+          </ul>
+          <div>
+            <p class="prix">À partir de 75 DT</p>
+            <p>Livraison en 5 à 10 jours selon le contenu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <div class="wrap">
+        <h2>Projets</h2>
+        <div class="projets">
+          <article class="projet">
+            <img src="images/projet1.jpg" alt="Capture du site du restaurant exemple">
+            <div>
+              <h3>Restaurant</h3>
+              <p>Menu, horaires, réservation par WhatsApp.</p>
+              <a href="demo-restaurant/index.html">Voir le site</a>
+            </div>
+          </article>
+          <article class="projet">
+            <img src="images/projet2.jpg" alt="Capture du site du cabinet exemple">
+            <div>
+              <h3>Cabinet / coach</h3>
+              <p>Présentation des services et prise de contact.</p>
+              <a href="demo-coach/index.html">Voir le site</a>
+            </div>
+          </article>
+          <article class="projet">
+            <img src="images/projet3.jpg" alt="Capture du site de la boutique exemple">
+            <div>
+              <h3>Boutique</h3>
+              <p>Catalogue de produits et commande par message.</p>
+              <a href="demo-boutique/index.html">Voir le site</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="apropos" id="apropos">
+      <div class="wrap">
+        <h2>À propos</h2>
+        <p>Je suis Med Yassine, développeur web en Tunisie. J'aide les commerces et les indépendants à avoir une présence en ligne simple et professionnelle. Je travaille directement avec vous, de l'idée jusqu'à la mise en ligne.</p>
+        <p class="tags">HTML5, CSS3, JavaScript, responsive, SEO de base</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Parlons de votre site</h2>
+        <p>Dites-moi quelle est votre activité et ce que vous attendez de votre site. Je vous réponds avec une proposition et un prix.</p>
+        <a class="btn" href="https://wa.me/21650127299">Écrire sur WhatsApp</a>
+        <a class="btn alt" href="mailto:ybendhia947@gmail.com">Envoyer un email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Med Yassine Ben Dhia</div>
+  </footer>
+
+</body>
+</html>

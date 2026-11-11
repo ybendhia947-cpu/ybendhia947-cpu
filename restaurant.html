@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dar Zitouna – Restaurant tunisien</title>
+<style>
+  :root { --vert:#24402c; --creme:#f7f3ea; --ocre:#d99a2b; --encre:#1d2420; --gris:#66706a; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family: Georgia, "Times New Roman", serif; background:var(--creme); color:var(--encre); line-height:1.65; }
+  :focus-visible { outline:3px solid var(--ocre); outline-offset:3px; }
+  .wrap { max-width:900px; margin:0 auto; padding:0 1.25rem; }
+  header { background:var(--vert); color:#fff; padding:5rem 0 4rem; text-align:center; }
+  header h1 { font-size:clamp(2.6rem,9vw,5rem); letter-spacing:.02em; }
+  header p { margin:1rem auto 2rem; max-width:30rem; color:#dfe8e0; font-size:1.15rem; }
+  .btn { display:inline-block; background:var(--ocre); color:var(--encre); padding:.85rem 1.6rem; text-decoration:none; font-weight:bold; font-family:system-ui,sans-serif; }
+  section { padding:3.5rem 0; }
+  h2 { font-size:2rem; margin-bottom:1.5rem; color:var(--vert); }
+  .plat { display:flex; justify-content:space-between; gap:1rem; border-bottom:1px dotted var(--gris); padding:.7rem 0; }
+  .plat small { display:block; color:var(--gris); }
+  .plat strong { white-space:nowrap; }
+  .infos { background:#fff; }
+  .infos .wrap { display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  footer { background:var(--vert); color:#dfe8e0; text-align:center; padding:1.5rem; font-family:system-ui,sans-serif; font-size:.9rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Dar Zitouna</h1>
+    <p>Cuisine tunisienne faite maison, au cœur de la médina.</p>
+    <a class="btn" href="https://wa.me/21650127299?text=Bonjour,%20je%20voudrais%20r%C3%A9server%20une%20table">Réserver sur WhatsApp</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Notre carte</h2>
+    <div class="plat"><div>Brik à l'œuf<small>Feuille de brik, œuf, thon, câpres</small></div><strong>6 DT</strong></div>
+    <div class="plat"><div>Couscous à l'agneau<small>Semoule fine, légumes de saison</small></div><strong>22 DT</strong></div>
+    <div class="plat"><div>Lablabi<small>Pois chiches, pain, harissa, œuf</small></div><strong>8 DT</strong></div>
+    <div class="plat"><div>Ojja merguez<small>Tomates, poivrons, œufs, merguez</small></div><strong>15 DT</strong></div>
+    <div class="plat"><div>Makroud au miel<small>Dessert à la semoule et aux dattes</small></div><strong>4 DT</strong></div>
+  </div>
+</section>
+
+<section class="infos">
+  <div class="wrap">
+    <div><h2>Horaires</h2><p>Mardi au dimanche<br>12h – 15h et 19h – 23h<br>Fermé le lundi</p></div>
+    <div><h2>Adresse</h2><p>12 rue de la Médina<br>Tunis<br>Tél. 50 127 299</p></div>
+  </div>
+</section>
+
+<footer>Site de démonstration réalisé par Med Yassine Ben Dhia</footer>
+</body>
+</html>

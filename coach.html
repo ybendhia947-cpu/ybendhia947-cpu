@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coach Amine – Coaching sportif personnalisé</title>
+<style>
+  :root { --nuit:#101c2e; --orange:#ff7a1a; --clair:#f2f5f9; --encre:#17202e; --gris:#5b6676; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--encre); background:var(--clair); line-height:1.65; }
+  :focus-visible { outline:3px solid var(--orange); outline-offset:3px; }
+  .wrap { max-width:980px; margin:0 auto; padding:0 1.25rem; }
+  .hero { background:var(--nuit); color:#fff; padding:5rem 0; }
+  .hero h1 { font-size:clamp(2.4rem,8vw,4.6rem); line-height:1.05; max-width:14ch; }
+  .hero p { margin:1.25rem 0 2rem; max-width:34rem; color:#c9d3e2; font-size:1.15rem; }
+  .btn { display:inline-block; background:var(--orange); color:#101c2e; padding:.85rem 1.6rem; border-radius:6px; text-decoration:none; font-weight:700; }
+  section { padding:3.5rem 0; }
+  h2 { font-size:clamp(1.7rem,4vw,2.3rem); margin-bottom:1.5rem; }
+  .grille { display:grid; gap:1.25rem; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+  .carte { background:#fff; border-left:5px solid var(--orange); padding:1.4rem; }
+  .carte p { color:var(--gris); margin-top:.4rem; }
+  .carte .prix { color:var(--encre); font-weight:700; font-size:1.3rem; margin-top:.8rem; }
+  .coach { background:var(--nuit); color:#fff; }
+  .coach p { max-width:40rem; color:#c9d3e2; }
+  footer { text-align:center; padding:1.5rem; color:var(--gris); font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="wrap">
+    <h1>Coach Amine</h1>
+    <p>Coaching sportif personnalisé : perte de poids, prise de masse ou remise en forme. Séances à la salle, en plein air ou en ligne.</p>
+    <a class="btn" href="https://wa.me/21650127299?text=Bonjour,%20je%20veux%20une%20s%C3%A9ance%20d'essai">Réserver une séance d'essai</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>Mes programmes</h2>
+    <div class="grille">
+      <div class="carte"><h3>Remise en forme</h3><p>Reprendre le sport en douceur, 3 séances par semaine.</p><p class="prix">120 DT / mois</p></div>
+      <div class="carte"><h3>Perte de poids</h3><p>Entraînement et conseils alimentaires, suivi chaque semaine.</p><p class="prix">150 DT / mois</p></div>
+      <div class="carte"><h3>Prise de masse</h3><p>Programme de musculation adapté à votre niveau.</p><p class="prix">150 DT / mois</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="coach">
+  <div class="wrap">
+    <h2>Qui suis-je ?</h2>
+    <p>Coach diplômé avec 6 ans d'expérience. Je construis chaque programme selon votre objectif, votre emploi du temps et votre niveau, et je vous suis jusqu'au résultat.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p style="margin-bottom:1.5rem">Écrivez-moi pour fixer votre première séance, elle est offerte.</p>
+    <a class="btn" href="https://wa.me/21650127299">Écrire sur WhatsApp</a>
+  </div>
+</section>
+
+<footer>Site de démonstration réalisé par Med Yassine Ben Dhia</footer>
+</body>
+</html>
